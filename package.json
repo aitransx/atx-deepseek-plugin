@@ -1,0 +1,17 @@
+{
+  "name": "@local/dsh-aitransx-assistant",
+  "version": "0.2.1",
+  "private": true,
+  "author": "AITransX",
+  "homepage": "https://github.com/aitransx/atx-deepseek-plugin#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/aitransx/atx-deepseek-plugin.git" },
+  "bugs": { "url": "https://github.com/aitransx/atx-deepseek-plugin/issues" },
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "Use ATX for web search, image generation and image recognition in DeepSeek Harness.",
+  "exports": { ".": "./index.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
+  "files": ["index.js", "tools.js", "core.js", "catalog.js", "connection.js", "cordis.patch.yml", "locale", "icon.svg", "README.md", "NOTICE.md", "tests"],
+  "engines": { "dsh": "0.2.2-rc.3" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": { "test": "node --test tests/*.test.js" }
+}

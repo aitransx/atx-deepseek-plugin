@@ -1,0 +1,14 @@
+- insert:
+    - id: local-aitransx-assistant
+      name: '@local/dsh-aitransx-assistant'
+      config:
+        baseUrl: https://api.aitransx.com/v1
+        apiKeyEnv: AITRANSX_API_KEY
+        providerId: ''
+        imageModel: openai/gpt-image-2
+        visionModel: openai/gpt-6.1-terra
+        refreshHours: 24
+        searchEnabled: true
+        imageEnabled: true
+        visionEnabled: true
+        timeoutMs: 180000
